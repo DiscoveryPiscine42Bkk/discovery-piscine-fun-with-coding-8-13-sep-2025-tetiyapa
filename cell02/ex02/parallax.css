@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img1 { background-image: url("https://marketplace.canva.com/8-1Kc/MAGoQJ8-1Kc/1/tl/canva-ginger-cat-with-paws-raised-in-air-MAGoQJ8-1Kc.jpg"); }
+.img2 { background-image: url("https://media.thairath.co.th/image/YKeEsZGu8aBN8eIdumk234npxUTwpCAS2KtXsbE9U0Ue9vA1.webp"); }
+
+
+.text {
+  color: white;
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+.block {
+  background: black;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
