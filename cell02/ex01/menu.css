@@ -1,0 +1,9 @@
+body { margin:0; font-family:sans-serif; }
+.menu { background:#333; display:flex; list-style:none; }
+.menu li { position:relative; }
+.menu a { color:#fff; padding:14px 20px; display:block; text-decoration:none; }
+.menu a:hover { background:#555; }
+
+.submenu { display:none; position:absolute; background:#444; list-style:none; padding:0; margin:0; }
+.submenu li a { padding:10px; }
+.menu li:hover .submenu { display:block; }
