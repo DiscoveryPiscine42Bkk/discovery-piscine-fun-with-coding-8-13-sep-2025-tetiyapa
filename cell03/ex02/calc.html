@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+</head>
+<body>
+  <input type="text" id="left" placeholder="First number">
+  <select id="op">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+    <option>%</option>
+  </select>
+  <input type="text" id="right" placeholder="Second number">
+  <input type="submit" value="Try me!" onclick="calc()">
+
+  <script>
+    function calc() {
+      let l = parseInt(document.getElementById("left").value);
+      let r = parseInt(document.getElementById("right").value);
+      let op = document.getElementById("op").value;
+
+      if (isNaN(l) || isNaN(r) || l < 0 || r < 0) {
+        alert("Error :("); return;
+      }
+
+      if ((op === "/" || op === "%") && r === 0) {
+        console.log("It's over 9000!");
+        alert("It's over 9000!");
+        return;
+      }
+
+      let res = eval(l + op + r);
+      console.log(res);
+      alert(res);
+    }
+
+  
+    setInterval(() => alert("Please, use me..."), 30000);
+  </script>
+</body>
+</html>
