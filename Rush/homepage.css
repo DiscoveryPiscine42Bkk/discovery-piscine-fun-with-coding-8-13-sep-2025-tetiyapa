@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: white;
+}
+nav{
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 50px;
+	background: #AEBDCA;
+	border-radius: 10px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	background: #7895B2;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width:33%;
+}
+nav .start-hompage, a:nth-child(1):hover~.animation{
+	width: 33.33%;
+	left: 0;
+}
+
+nav a:nth-child(2){
+	width: 33.33%;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 33.33%;
+	left: 33.33%;
+}
+
+nav a:nth-child(3){
+	width: 33.33%;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 33.33%;
+	left: 66.66%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.card {
+    width: 300px;
+    margin: 2rem auto;
+    height:500px;
+    box-shadow: 0px 0px 20px 1px rgb(145, 145, 145) ;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.card1 {
+    margin: 50px;
+}
+
+.card2 {
+    margin: 50px;
+}
+
+.img{
+    height: 250px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+}
+.content{
+    text-align: center;
+    border-bottom: 1px solid #7895B2;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    margin: 1px 0;
+    font-size: 20px;
+    margin-bottom: 15px;  
+}
+
+.content h3 {
+    font-size: 20px;
+    color: gray;
+}
+
+.btn{
+    color: white;
+    font-size: 30px;
+    text-decoration:none;
+}
+
+.footer{
+    background: #7895B2;
+    text-align: center;
+    height: 50px;
+    padding: 1px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.footer:hover{
+    background-color: #AEBDCA;
+}
